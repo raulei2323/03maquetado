@@ -1,0 +1,22 @@
+.navbar {
+  width: 100%;
+  padding: $espaciadoContenedor;
+  @include filaFlexCentradaVertical;
+  justify-content: space-between;
+
+  nav {
+    ul {
+      @include filaFlexCentradaVertical;
+      justify-content: flex-end;
+      gap: 10px;
+      li {
+        list-style: none;
+        padding: $espaciadoContenedor;
+        cursor: pointer;
+      }
+      li:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

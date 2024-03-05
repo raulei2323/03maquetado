@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.navbar nav ul li {
+  list-style: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.navbar nav ul li:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .seccion {
+  flex: 1;
+  flex-basis: 30%;
+}
+
+.seccion,
+.seccion2,
+.seccion3 {
+  background-color: #5c6263;
+  color: #878f99;
+  padding: 10px 15px;
+  margin: 10px 15px;
+}
+
+@media screen and (min-width: 768px) {
+  main .seccion {
+    width: 28%;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .seccion {
+    width: 100%;
+    flex-basis: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

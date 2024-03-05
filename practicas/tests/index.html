@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+      }
+
+      /* .comment-container {
+        width: 300px;
+        margin: 0 auto;
+      } */
+
+      .comment-container {
+        width: 300px;
+        margin: 20px auto;
+      }
+
+      .comment {
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: relative;
+      }
+
+      .comment p::before {
+        content: "💬"; /* Contenido que se agregará antes de cada comentario */
+        font-size: 1.5em;
+        margin-right: 8px;
+      }
+
+      .comment p::after {
+        content: ""; /* Contenido que se agregará antes de cada comentario */
+        font-size: 1.5em;
+        margin-right: 8px;
+      }
+
+      .comment-container .comment:nth-child(1) p::after {
+        content: "😍";
+      }
+
+      .comment-container .comment:nth-child(2) p::after {
+        content: "🤔";
+      }
+
+      .comment-container .comment:nth-child(3) p::after {
+        content: "👏";
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="comment-container">
+      <div class="comment">
+        <p>¡Me encanta este artículo!</p>
+      </div>
+      <div class="comment">
+        <p>¿Alguien más piensa que esto es genial?</p>
+      </div>
+      <div class="comment">
+        <p>¡Este contenido es asombroso!</p>
+      </div>
+    </div>
+  </body>
+</html>
